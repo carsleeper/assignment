@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1, .box2, input[type=submit], input[type=reset] {
+	    	padding: 10px; 
+	    	margin : 10px;
+	    	width: 400px;
+	    }
+        .box1, input[type=submit], input[type=reset]{
+            border-radius: 10px;
+		    border: 2px solid #73AD21;
+		    background-color : #73AD21;
+		    height: 20px; 
+		    color : white;
+		    text-align : center;
+        }
+        input[type=submit], input[type=reset] {
+            padding: 0px;
+            height: 40px;
+            border-radius: 0;
+            width: 177px;
+            text-align: center;
+        }
+        input[type=text], input[type=email], select, .box3, textarea {
+	    	width : 100%;
+	    	height : 40px;
+	    	border : 1px solid #8C8C8C;
+	       	box-sizing: border-box;
+	    	padding : 5px;
+    	}
+        select, input[name=txt_date]{
+            width: 30%;
+            margin-right: 9px;
+        }
+        .box3 {
+            display: flex;
+            justify-content: left;
+            padding-left: 30px;
+        }
+        textarea {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <form name="myform" action="#" method="get">
+        <div class="box1">
+            개인 신청 자료
+        </div>
+        <div class="box2">
+            <div>
+                <label for="txt_name">성명</label><br/>
+                <input type="text" name="txt_name" id="txt_name" placeholder="성명 입력">
+            </div>
+            <br>
+            <div>
+                <label for="txt_email">E-mail</label><br/>
+                <input type="email" name="txt_email" id="txt_email" placeholder="Email 입력">
+            </div>
+            <br>
+            <div>
+                <label for="txt_date">생년월일</label><br/>
+                <div>
+                    <input type="text" name="txt_date" id="txt_year" placeholder="년">
+                    <select name="txt_date" id="txt_month">
+                        <option value="1월">1월</option>
+                        <option value="2월">2월</option>
+                        <option value="3월">3월</option>
+                        <option value="4월">4월</option>
+                        <option value="5월">5월</option>
+                        <option value="6월">6월</option>
+                        <option value="7월">7월</option>
+                        <option value="8월">8월</option>
+                        <option value="9월">9월</option>
+                        <option value="10월">10월</option>
+                        <option value="11월">11월</option>
+                        <option value="12월">12월</option>
+                    </select>
+                    <input type="text" name="txt_date" id="txt_day" placeholder="일">
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="txt_gender">성별</label><br/>
+                <div class="box3">
+                    <div>
+                        <label for="male">남</label>
+                        <input type="radio" name="male" value="male">
+                        <label for="female">여</label>
+                        <input type="radio" name="female" value="female">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="txt_hobby">관심분야</label>
+                <div class="box3">
+                    <div>
+                        <label for="item1">C</label>
+                        <input type="checkbox" name="item1" id="item1" value="C">
+                    </div>
+                    <div>
+                        <label for="item2">파이썬</label>
+                        <input type="checkbox" name="item2" id="item2" value="python">
+                    </div>
+                    <div>
+                        <label for="item3">R</label>
+                        <input type="checkbox" name="item3" id="item3" value="R">
+                    </div>
+                    <div>
+                        <label for="item4">Javascript</label>
+                        <input type="checkbox" name="item4" id="item4" value="Javascript">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="txt_etc">etc</label>
+                <div>
+                    <textarea name="txt_etc" id="etc" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="확인">
+                <input type="reset" value="취소">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

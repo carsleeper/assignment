@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.co
+m/icon?family=Material+Icons">
+    <title>HTML 연습</title>
+    <style>
+        
+        header {
+            padding: 10px;
+            background-color: rgb(26, 44, 95);
+            text-align: left;
+            height: 300px;
+        }
+        
+        nav {
+            background-color: rgb(125, 141, 187);
+            height: 26px;
+            padding: 10px 0px 0px 0px;
+        }
+        nav a{
+            text-decoration: none;
+            margin: -16px 15px;
+            display: inline-block;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 130%;
+        }
+
+        nav a:link,
+        nav a:visited {
+            color: white;
+            
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: rgb(125, 141, 187);
+            display: inline-block;
+
+        }
+
+        section {
+            margin: 20px;
+            border: solid 2px rgb(125, 141, 187);
+            width: 40%;
+            height: 200px;
+            float: left;
+        }
+        section div p {
+            background-color: rgb(26, 44, 95);
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            font-size: 200%;
+            font-weight: bold;
+        }
+        footer {
+            clear: both;
+            padding: 20px;
+            background-color: darkgrey;
+            text-align: left;
+            height: 110px;
+        }
+        img {
+            float: left;
+            margin-top: -10px;
+        }
+        li {
+          margin: 4px 30px  
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><img src="IMG/me.jpeg" alt="my img" width="210" height="280"></h1>
+        <p style="font-size: 200%; font-weight: bold; color: white;">&nbsp;&nbsp;&nbsp;&nbsp; Lee Hyunwoo</p>
+        <p style="font-size: 130%; font-weight: bold; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이현우</p>
+    </header>
+    <nav>
+        <a href="#s1">[개인정보]</a>
+        <a href="#s2">[학력사항]</a>
+        <a href="#s3">[자격사항]</a>
+        <a href="#s4">[자기소개]</a>
+    </nav>
+    <section id="s1">
+        <div>
+            <p>개인정보</p>
+        </div>
+            <p style=" margin: 4px 60px "><i class="material-icons" style="font-size:20px;">book</i>이현우<br>
+            <i class="material-icons" style="font-size:20px;">phone</i>01031334439<br>
+            <i class="material-icons" style="font-size:20px;">email</i>hw1115.lee@gmail.com<br> 
+            <i class="material-icons" style="font-size:20px;">house</i>부산 동래구 사직로 80</p>
+    </section>
+    <section id="s2">
+        <div>
+            <p>학력사항</p>
+        </div>
+        <ul>
+            <li>
+                <img src="IMG/univer.png"
+               width="30" height="30">
+               <a style="text-decoration-line: none;"href="https://www.pusan.ac.kr/" target="_blank">부산대학교 재학</a></li>
+            <li>
+                <img src="IMG/high.png"
+               width="30" height="30">
+               <a style="text-decoration-line: none;"href="http://www.dongin.hs.kr/" target="_blank">동인고등학교 졸업</a></li>
+            <li>
+                <img src="IMG/middle.png"
+               width="30" height="30">
+               <a style="text-decoration-line: none;"href="http://sajik.ms.kr/" target="_blank">사직중학교 졸업</a></li>
+            <li>
+                <img src="IMG/element.jpeg"
+               width="30" height="30">
+               <a style="text-decoration-line: none;"href="http://www.yewon.es.kr/" target="_blank">예원초등학교 졸업</a></li>
+        </ul>
+    </section>
+    <section id="s3">
+        <div>
+            <p>자격사항</p>
+        </div>
+        <ol>
+            <li>취득자격증a</li>
+            <li>취득자격증b</li>
+            <li>취득자격증c</li>
+        </ol>
+    </section>
+    <section id="s4">
+        <div>
+        <p>자기소개</p>
+        </div>
+            <p style=" margin: 4px 60px; "><a style="text-decoration-line: none;" href="SWOT 분석.html" target="_blank;">SWOT 분석</a></p>
+            <p style="  margin: 4px 60px;">컴퓨터공학과 24학번 이현우입니다.<br></p>
+        </ul>
+    </section>
+    <footer>
+        &copy;Lee Hyunwoo, 부산광역시 사직로 80
+    </footer>
+    </body>
+    
+</html>
